@@ -19,13 +19,23 @@
         </nav>
     </header>
     <main>
-        <p>Email: <a href="mailto:info@techcon.com">info@techcon.com</a></p>
-        <form>
-            <label>Name:</label><input type="text" required>
-            <label>Email:</label><input type="email" required>
-            <label>Message:</label><textarea required></textarea>
+        <p>Contact us via email: 
+            <a href="mailto:email@example.com" target="_blank">email@example.com</a>
+        </p>
+        
+        <form action="submit_form.php" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+        
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+        
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+        
             <button type="submit">Send Message</button>
         </form>
+        
         <iframe src="https://maps.google.com/..." width="600" height="450"></iframe>
     </main>
     <footer>
